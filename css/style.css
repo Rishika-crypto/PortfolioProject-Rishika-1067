@@ -1,0 +1,282 @@
+@import url(utilities.css);
+:root {
+  --primary: #3dcfd3;
+  --dark: #161616;
+  --pure: #ffffff;
+  --ternary: #898989;
+  --light: #f2f2f2;
+  --secondary: #070606;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialised;
+}
+
+header {
+  background-color: var(--dark);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 87%, 0 100%);
+}
+
+.container {
+  max-width: 1152px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+header nav .left a {
+  color: var(--pure);
+  text-decoration: none;
+  margin-right: 2rem;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+header nav .left a:hover {
+  color: var(--primary);
+}
+
+header nav {
+  padding: 2rem 0;
+}
+
+header nav .branding {
+  margin-right: 3rem;
+}
+
+.hero {
+  padding: 3rem 0;
+}
+
+.hero .left img {
+  width: 400px;
+  filter: grayscale(100%);
+}
+
+.hero .right {
+  color: var(--pure);
+}
+
+.hero .right h6 {
+  font-size: 1.6rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.hero .right h1 {
+  font-size: 4rem;
+  font-weight: 100;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+.hero .right span {
+  color: var(--primary);
+}
+
+.hero .right p {
+  line-height: 1.9;
+  margin-bottom: 2rem;
+}
+
+.hero .right {
+  margin: -7rem;
+}
+
+section {
+  padding: 6rem 0;
+}
+
+section.about .about-me-img {
+  height: 500px;
+}
+
+section.about h1 {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+section.about h1 span {
+  color: var(--primary);
+}
+
+section.about h3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+section.about p {
+  color: var(--ternary);
+  line-height: 1.9;
+  margin-bottom: 2rem;
+}
+
+section.about .social {
+  display: flex;
+}
+
+section.about .social a {
+  background: var(--dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 0.6rem;
+  transition: all 0.3s ease;
+}
+
+section.about .social a img {
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem;
+}
+
+section.about .social a:hover {
+  background: var(--primary);
+}
+
+.section-heading {
+  color: var(--secondary);
+  text-align: center;
+  margin-bottom: 1rem;
+  line-height: 0.5;
+}
+
+.section-heading span {
+  color: var(--primary);
+}
+
+.section-heading + p {
+  color: var(--ternary);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+section.resume {
+  background: var(--light);
+}
+
+.child {
+  margin: 50px;
+  padding: 25px;
+  width: 300px;
+  height: 300px;
+  display: block;
+}
+
+.child1 {
+  background-color: var(--primary);
+}
+
+.child1:hover {
+  background-color: var(--ternary);
+  transform: rotate(360deg); /*steps(4,end) <-- shows steps in the transition*/
+  transition-property: all;
+  transition-duration: 4s;
+}
+
+.child2 {
+  background-color: var(--primary);
+  /*float: left;*/
+}
+
+.child2:hover {
+  background-color: var(--ternary);
+  transform: rotate(360deg); /*steps(4,end) <-- shows steps in the transition*/
+  transition-property: all;
+  transition-duration: 4s;
+}
+
+.child3 {
+  background-color: var(--primary);
+}
+
+.child3:hover {
+  background-color: var(--ternary);
+  transform: rotate(360deg); /*steps(4,end) <-- shows steps in the transition*/
+  transition-property: all;
+  transition-duration: 4s;
+}
+
+.contact {
+  color: var(--secondary);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.contact span {
+  color: var(--primary);
+  margin-bottom: 5rem;
+}
+
+.card {
+  display: inline-block;
+  margin: 50px;
+  padding: 25px;
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  background-color: var(--light);
+  text-align: center;
+}
+
+section.contact .card-wrapper .card .img {
+  margin-bottom: 3rem;
+}
+section.contact .card-wrapper .card h1 {
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+section.contact .card-wrapper .card h6 {
+  font-size: 1rem;
+  color: var(--ternary);
+}
+
+section.contact .input-wrap {
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+  grid-gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+section.contact .input-wrap2 {
+  display: flex;
+  flex-direction: column;
+}
+
+section.contact .input-wrap2 input {
+  margin-bottom: 2rem;
+  border: 1px solid var(--light);
+  font-size: 0.9rem;
+}
+
+section.contact input {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--light);
+  font-size: 0.9rem;
+}
+
+section.contact .input-wrap2 textarea {
+  padding: 0.5rem;
+  border: 1px solid var(--light);
+  font-size: 0.9rem;
+}
+
+section.contact .btn-wrapper {
+  text-align: center;
+}
+
+.card img {
+  height: 70px;
+  width: 70px;
+}
